@@ -13,11 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "compression": "^1.7.4",
     "log4js": "^6.5.2",
     "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "bcrypt-nodejs": "0.0.3",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.0.1",
