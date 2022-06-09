@@ -14,7 +14,8 @@ const { cpus } = require("os");
 const comprimir = require("compression");
 const infoRoutes = require("./routes/info.js");
 // const infoComprimidoRoutes = require("./routes/infoComprimido.js");
-const PORT = parseInt(process.argv[2]) || 8080;
+// const PORT = parseInt(process.argv[2]) || 8080;
+const PORT = 8080;
 const modoCluster = process.argv[3] == "CLUSTER";
 const logger = require("./logger.js");
 // initializations
