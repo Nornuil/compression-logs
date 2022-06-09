@@ -79,7 +79,7 @@ if (modoCluster && cluster.isPrimary) {
     cluster.fork();
   });
 } else {
-  app.listen(PORT, (err) => {
+  app.listen(process.env.PORT || PORT, (err) => {
     if (!err)
       // console.log(
       //   `Servidor express escuchando en el puerto ${PORT} - PID WORKER ${process.pid}`
@@ -90,3 +90,5 @@ if (modoCluster && cluster.isPrimary) {
   });
   app.on("error", (error) => logger.error(`Server error ${error}`));
 }
+
+const worker = { hola: "hola", hjoasfd: "sdfoiuh" };
